@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <style>
+            #texto{
+                color: brown;
+                font-size: 20px;
+                text-align: justify;
+                background-color: cornsilk;
+                padding: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Clarice Lispector</h1>
+        <p id="texto">
+            "Até cortar os próprios defeitos pode ser perigoso. Nunca se sabe qual é o defeito que sustenta nosso edifício inteiro."
+        </p>
+        <button onclick="mudar_cor()">Mudar Cor</button>
+        <button onclick="mudar_cor_fundo()">Mudar Cor de Fundo</button>
+        <button onclick="colocar_borda()">Colocar Borda</button>
+        <button onclick="mudar_italico()">Itálico</button>
+        <button onclick="zerar()">Reset</button>
+
+        <script>
+            function zerar(){
+                document.getElementById("texto").removeAttribute("style");
+            }
+            function mudar_italico(){
+                document.getElementById("texto").style.fontStyle = "italic";
+            }
+            function colocar_borda(){
+                document.getElementById("texto").style.border = "2px solid black";
+            }
+            function mudar_cor_fundo(){
+                document.getElementById("texto").style.backgroundColor = "gray";
+            }
+            function mudar_cor(){
+                document.getElementById("texto").style.color = "black";
+            }
+        </script>
+    </body>
+</html>

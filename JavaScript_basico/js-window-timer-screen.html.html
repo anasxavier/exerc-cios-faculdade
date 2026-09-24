@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <title>JAVASCRIPT</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <button onclick="abrir_janela()">Abrir</button>
+        <button onclick="mostrar_resolucao()">Mostrar Resolução da Tela</button>
+        <button onclick="iniciar_contador()">Iniciar Contador</button>
+        <p id="resolucao"></p>
+        <p id="contador"></p>
+        <script>
+            var contador = 0
+            var intevalo
+
+            function iniciar_contador(){
+                contador = 0
+                document.getElementById("contador").innerText = "Contador... "
+                //Executar a cada 1 segundo
+                intervalo = setInterval(
+                () => {
+                    contador++
+                    document.getElementById("contador").innerText = "Segundos: " + contador
+                 }    
+                , 1000)
+                //Para de executaer depois de 10 segundos
+                setTimeout(
+                () => { clearInterval(intervalo) 
+                        document.getElementById("contador").innerText += " (Parou em 10s)"
+                }   
+                , 10000)
+            }
+            function mostrar_resolucao(){
+                let largura = screen.width
+                let altura = screen.height
+                document.getElementById("resolucao").innerText = "Resolução da Tela = " + largura + " x " + altura
+            }
+            function abrir_janela(){
+                window.open("aula7.html" , "minhajanela", "width=500, height=300, top=150, left=150")
+            }
+        </script>
+    </body>
+</html>

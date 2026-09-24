@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <style>
+            #container{
+                border: 2px solid green;
+                font-size: 25px;
+                margin: 30px;
+                padding: 20px;
+            }
+            #conteudo{
+                margin-top: 20px;
+                display: none;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="titulo"> 
+                JavaScript 
+                <a href="#" onclick="mostrar()"> <span>Saiba mais...</span> </a>
+            </div>
+            <div id="conteudo"> JavaScript é uma linguagem de programação interpretada e de alto nível usada para criar páginas web interativas e dinâmicas.</div>
+        </div>
+        <script>
+            function mostrar(){
+                if (document.getElementById("conteudo").style.display == "block") {
+                    document.getElementById("conteudo").style.display = "none";
+                }else {
+                    document.getElementById("conteudo").style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
