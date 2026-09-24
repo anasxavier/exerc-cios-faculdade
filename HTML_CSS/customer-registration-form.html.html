@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulário</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="aula_7.css">
+</head>
+
+<body>
+
+    <div class="card-formulario">
+        <h2 class="titulo-form">Cadastro do Cliente</h2>
+
+        <form name="form1" method="post" action="grava.jsp">
+
+            <div class="campo">
+                <label class="rotulo-bloco" for="txtnome">Nome:</label>
+                <input class="input-texto" type="text" maxlength="5" name="txtnome" id="txtnome">
+            </div>
+
+            <div class="campo">
+                <label class="rotulo-bloco" for="txtsenha">Senha</label>
+                <input class="input-texto" type="password" name="txtsenha" id="txtsenha">
+            </div>
+
+            <div class="campo">
+                <label class="rotulo-bloco" for="txtnumero">Número</label>
+                <input class="input-texto" type="number" min="3" max="8" name="txtnumero" id="txtnumero">
+            </div>
+
+            <div class="campo">
+                <label class="rotulo-bloco" for="mensagem">Mensagem: </label>
+                <textarea rows="4" id="mensagem" name="mensagem"></textarea>
+            </div>
+
+            <div class="campo">
+                <label class="rotulo-bloco" for="estado">Estado: </label>
+                <select id="estado" name="estado">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label class="rotulo-bloco"> Pagamento: </label>
+                <div class="grupo-opcoes">
+                    <label class="opcao-inline"> <input type="radio" name="pgto" value="1">à vista</label>
+                    <label class="opcao-inline"> <input type="radio" name="pgto" value="3">3x</label>
+                    <label class="opcao-inline"> <input type="radio" name="pgto" value="6">6x</label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label class="rotulo-bloco">Produtos:</label>
+                <div class="grupo-opcoes">
+                    <label class="opcao-inline"> <input type="checkbox" name="prod" value="1">Caneta</label>
+                    <label class="opcao-inline"> <input type="checkbox" name="prod" value="2">Lápis</label>
+                    <label class="opcao-inline"> <input type="checkbox" name="prod" value="3">Papel</label>
+                </div>
+            </div>
+
+            <div class="area-botoes">
+                <button class="btn" id="btn-enviar" type="submit">Gravar</button>
+                <button class="btn" id="btn-limpar" type="reset">Limpar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
