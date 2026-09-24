@@ -5,9 +5,11 @@ Este repositório reúne os exercícios práticos desenvolvidos durante as aulas
 ## 📁 Estrutura do Projeto
 
 ### 🐍 `/python`
-- **Cálculo de Média:** Cálculo com notas ponderadas e subprogramas em funções.
-- **Calculadora de IMC:** Avaliação de faixas de peso com estruturas condicionais `elif/else`.
-- **Reajuste Salarial:** Aplicação de regras de negócio para aumento de salário baseado em faixas.
+- **Entrada e Saída Básica:** Leitura e formatação de dados do usuário (`basic-user-input-intro.py`).
+- **Cálculo de Média:** Cálculo de notas ponderadas com script sequencial (`weighted-grade-calculator-script.py`) e modularizado em funções (`weighted-grade-calculator-functions.py`).
+- **Planejamento Acadêmico:** Cálculo da nota mínima necessária na prova final (`minimum-passing-grade-calculator.py`).
+- **Estruturas de Repetição (`while`):** Soma de números pares (`even-numbers-sum-while.py`), uso de `break` e `continue` com ímpares (`odd-numbers-break-continue.py`), cálculo de fatorial (`factorial-calculator-while.py`) e validações condicionais (`while-loop-conditions.py`).
+- **Utilidades e Módulos:** Gerador de números para Mega-Sena com a biblioteca `random` (`megasena-random-number-generator.py`) e manipulação de listas e iterações com `for` (`for-loop-examples-and-lists.py`).
 
 ### ⚡ `/c`
 - **Cadastro de Produtos:** Entrada de dados com `fgets` e saída formatada.
@@ -18,15 +20,15 @@ Este repositório reúne os exercícios práticos desenvolvidos durante as aulas
 ### 🌐 `/html-css`
 - **Estrutura Semântica:** Uso das tags `<header>`, `<main>`, `<article>` e `<footer>`.
 - **Tabelas e Listas:** Formatação de dados estruturados, listas ordenadas e não ordenadas.
-- **Estilização e Formulários:** Estilos inline, seletores CSS e formulário completo de cadastro de cliente (`customer-registration-form.html`).
+- **Estilização e Formulários:** Aplicação de CSS inline (`css-inline-styles.html`) e formulário de cadastro de cliente (`customer-registration-form.html`).
 
 ### 🟨 `/javascript-basico`
 - **Manipulação de Cores e Estilos:** Alteração dinâmica de background (`js-background-color-picker.html`) e propriedades CSS via DOM (`js-dom-style-manipulation.html`).
-- **Lógica e Condicionais:** Entrada e conversão de dados (`js-basic-calculator-prompt.html`), verificação de idade com script externo (`js-external-script.js`) e exibição de conteúdo retrátil (`js-toggle-content-display.html`).
-- **Manipulação de Janela e Temporizadores:** Uso de `screen`, abertura de pop-ups e criação de contadores com `setInterval` / `setTimeout` (`js-window-timer-screen.html`).
+- **Lógica e Condicionais:** Entrada e conversão de dados (`js-basic-calculator-prompt.html`), saída direta no documento (`js-document-write-intro.html`), verificação de idade via script externo (`js-external-script.js`) e exibição de conteúdo retrátil (`js-toggle-content-display.html`).
+- **Manipulação de Janela e Temporizadores:** Leitura de tela (`screen`), abertura de janelas e contadores com `setInterval` / `setTimeout` (`js-window-timer-screen.html`).
 
 ## 🛠️ Tecnologias Utilizadas
-- **Python**
+- **Python 3**
 - **Linguagem C**
 - **HTML5 & CSS3**
 - **JavaScript**
