@@ -29,4 +29,4 @@ Este repositório reúne os exercícios práticos desenvolvidos durante as aulas
 - **Python**
 - **Linguagem C**
 - **HTML5 & CSS3**
-- **JavaScript **
+- **JavaScript**
