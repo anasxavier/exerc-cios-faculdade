@@ -28,7 +28,7 @@ Este repositório reúne os exercícios práticos desenvolvidos durante as aulas
 - **Manipulação de Janela e Temporizadores:** Leitura de tela (`screen`), abertura de janelas e contadores com `setInterval` / `setTimeout` (`js-window-timer-screen.html`).
 
 ## 🛠️ Tecnologias Utilizadas
-- **Python 3**
+- **Python**
 - **Linguagem C**
 - **HTML5 & CSS3**
 - **JavaScript**
